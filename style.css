@@ -28,8 +28,8 @@ body{
   height:100px;
 }
 .main .btn{
-    font-size:20px;
-    background-color:#533aa4;
+    font-size:17px;
+    background:linear-gradient(#533aa4,#1c1f69);
     color:aliceblue;
     display:flex;
     justify-content:space-around;
@@ -37,9 +37,41 @@ body{
    margin:20px;
    padding: 10px;
    border:none;
+   border:0;
+   outline:0;
+}
+.main .btn:hover{
+    cursor:pointer;
 }
 .main .btn img{
     width:30px;
     height:30px;
     padding:5px;
+}
+.notes-box{
+  
+    
+    display:block;
+    position: relative;
+}
+.notes-box .notes{
+position:relative;
+width:100%;
+    background-color: aliceblue;
+    max-width:450px;
+    min-height: 100px;
+   border-radius: 5px;
+   margin:20px 0;
+   padding:20px;
+   outline:none;
+  color:#333;
+   
+}
+.notes-box .notes img{
+    width:25px;
+    height:20px;
+    position: absolute;
+  bottom:15px;
+  right:15px;
+  cursor: pointer;
 }
